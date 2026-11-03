@@ -1,17 +1,21 @@
 'use client';
 
-import { CldUploadWidget } from 'next-cloudinary';
+import {
+  CldUploadWidget,
+  type CldUploadWidgetProps,
+  type CloudinaryUploadWidgetInfo,
+} from 'next-cloudinary';
 import { useState } from 'react';
 
 const Uploader = () => {
-  const [info, setInfo] = useState();
-  function handleSuccess(result, widget) {
+  const [info, setInfo] = useState<CloudinaryUploadWidgetInfo | string>();
+  const handleSuccess: CldUploadWidgetProps['onSuccess'] = (result, { widget }) => {
     setInfo(result?.info);
     // setError(null);
     widget.close({
       quiet: true,
     });
-  }
+  };
 
   function handleError() {}
 
