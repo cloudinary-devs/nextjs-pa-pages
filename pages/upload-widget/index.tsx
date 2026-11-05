@@ -1,4 +1,4 @@
-import Uploader from './_components/uploader';
+import Uploader from '@/components/uploader';
 
 const UploadWidgetPage = () => {
   return (

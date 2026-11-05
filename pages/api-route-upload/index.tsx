@@ -1,16 +1,16 @@
-import UploadForm from './_components/upload-form';
+import UploadForm from '@/components/upload-form';
 
-const ServerActionUpload = () => {
+const ApiRouteUpload = () => {
   return (
     <div className="m-2 space-y-4">
-      <h1 className="text-5xl font-bold">Server Action Upload</h1>
+      <h1 className="text-5xl font-bold">API Route Upload</h1>
       <p className="m-2">
         This example shows how to upload images via{' '}
         <a
           className="underline text-blue-500 hover:bg-blue-200 rounded-full transition duration-300"
-          href="https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations"
+          href="https://nextjs.org/docs/pages/building-your-application/routing/api-routes"
         >
-          Next.js Server Actions
+          a Next.js API route
         </a>
         .
       </p>
@@ -36,4 +36,4 @@ const ServerActionUpload = () => {
   );
 };
 
-export default ServerActionUpload;
+export default ApiRouteUpload;
