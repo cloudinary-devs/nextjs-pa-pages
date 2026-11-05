@@ -1,5 +1,5 @@
 import cloudinary from '@/utils/cloudinary';
-import AlbumItem from './_components/album-item';
+import AlbumItem from '@/components/album-item';
 import { getCldImageUrl } from 'next-cloudinary';
 
 type Photo = {

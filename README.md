@@ -5,8 +5,13 @@ This project demonstrates how to use the [Cloudinary Next.js SDK](https://next.c
 The sample project showcases the following functionality:
 
 - Using the [Upload Widget](https://cloudinary.com/documentation/upload_widget) to upload images to your product environment via the Next.js SDK.
-- Using the [Node.js Upload](https://cloudinary.com/documentation/node_image_and_video_upload) to upload images to your product environment via Next.js Server Actions
+- Using the [Node.js Upload](https://cloudinary.com/documentation/node_image_and_video_upload) to upload images to your product environment via a Next.js API route
 - [Transforming](https://cloudinary.com/documentation/image_transformations) and displaying images
+
+# Requirements
+
+- Node.js 22 or later
+- This project uses `next-cloudinary` version 7, which requires Next.js 16 and React 18.2 or 19
 
 # Setup
 
